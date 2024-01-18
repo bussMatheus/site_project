@@ -1,0 +1,42 @@
+@import "./colors/colors.scss";
+*{
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    height: 10vh;
+    
+    .title{
+        color: $secondary-color;
+
+    }
+}
+
+#ConvertSection{
+    background-color: $terciary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+    .container{
+        background-color: $secondary-color;
+        width: 450px;
+        height: 350px;
+        padding: 70px;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    .h2{
+        
+    }
+}
+
+
+
+
+
