@@ -1,92 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
 }
 
 .nav {
+  position: absolute;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3e41ee;
+  background-color: #6265f4;
   height: 10vh;
+  z-index: 2;
 }
 .nav .title {
+  font-family: "Poppins";
   color: #fcf8f8;
 }
 
 #ConvertSection {
-  background-color: #f6f6f6;
   display: flex;
+  background-image: url("../images/blockchain-3277335_1920.png");
+  background-size: cover;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100vh;
+  margin: 0;
 }
 #ConvertSection .container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #fcf8f8;
   width: 500px;
   height: 350px;
   padding: 70px;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  z-index: 1;
 }
-#ConvertSection .h2 {
+#ConvertSection .container .h2 {
+  font-family: "Poppins";
   color: #151515;
   text-align: center;
   text-transform: uppercase;
 }
-#ConvertSection .rate {
+#ConvertSection .container .rate {
   margin-top: 1.5rem;
+  font-family: "Poppins";
 }
-#ConvertSection .rate1 {
-  color: #f6f6f6;
+#ConvertSection .container .rate .rate1 {
+  color: #151515;
 }
-#ConvertSection .rate2 {
+#ConvertSection .container .rate .rate2 {
   margin-top: 0.5rem;
   font-size: 1.5rem;
 }
-#ConvertSection .converter {
+#ConvertSection .container .converter {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 2rem;
 }
-#ConvertSection .swap {
+#ConvertSection .container .converter .swap {
   align-self: flex-end;
   padding: 5px;
   cursor: pointer;
 }
-#ConvertSection .options select {
-  padding: 2%;
-  width: 75px;
+#ConvertSection .container .converter .options {
+  display: flex;
+  justify-content: center;
 }
-#ConvertSection .input input {
+#ConvertSection .container .converter .options select {
+  padding: 3%;
+  width: 100px;
+  text-align: center;
+  font-family: "Poppins";
+  background-color: #6265f4;
+  color: #fcf8f8;
+}
+#ConvertSection .container .converter .input input {
   all: unset;
   display: inline-block;
   margin-top: 1rem;
   width: 175px;
   height: 48px;
   padding: 5px;
-  background-color: #f6f6f6;
+  background-color: #f0efef;
   color: #151515;
   font-size: 1.5rem;
+  font-family: "Poppins";
   border: none;
   box-sizing: border-box;
   border-radius: 5px;
 }
-#ConvertSection .target {
+#ConvertSection .container .converter .target {
   transform: translateX(-5%);
 }
-#ConvertSection .result {
+#ConvertSection .container .result {
   margin-top: 1.5rem;
   width: 100%;
   height: 50px;
   text-align: center;
-  color: #151515;
-  background-color: #f6f6f6;
+  font-family: "Poppins";
+  color: #fcf8f8;
+  background-color: #6265f4;
   outline: none;
   border: none;
   border-radius: 5px;
 }
-#ConvertSection .result:active {
+#ConvertSection .container .result:active {
   background-color: #fcf8f8;
 }
 
